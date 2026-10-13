@@ -80,7 +80,7 @@ public class Main {
         System.out.println("Total: " + total);
     }
 
-    public static void registerUser(String name, int age) throws InvalidAgeException {
+    public static void registerUser(String name, int age) {
 
         if (age < 18 || age > 120) {
             throw new InvalidAgeException("Age must be between 3 and 120");
